@@ -30,6 +30,9 @@ pico.eset.com
 download.eset.com
 download.liveinstaller.eset.systems
 
+# --- ESET Bridge Whitelisting ---
+login.microsoftonline.com
+
 # --- Expiration & Licensing ---
 expire.eset.com
 edf.eset.com
@@ -51,6 +54,7 @@ h3-esa2-03-v.eset.com
 h3-esa2-04-v.eset.com
 
 # --- ESET LiveGrid & Reputation ---
+e5.sk
 h1-c01.eset.com
 h1-c02.eset.com
 h1-c03.eset.com
@@ -198,6 +202,7 @@ h1-repository01-v.eset.com
 h3-repository02-v.eset.com
 91-228-167-25.ptr.eset.com
 nocdn-repository.gtm.eset.com
+repositorynocdn.eset.com
 
 # --- ESET PROTECT Cloud ---
 eba.eset.com
@@ -210,11 +215,22 @@ us02.protect.eset.com
 jp02.protect.eset.com
 ca01.protect.eset.com
 de01.protect.eset.com
+*.a.ecaserver.eset.com
 eu01.server.xdr.eset.systems
 de01.server.xdr.eset.systems
 jp01.server.xdr.eset.systems
 us01.server.xdr.eset.systems
 ca01.server.xdr.eset.systems
+epx-k8s-prod-eu-a.westeurope.cloudapp.azure.com
+epx-k8s-prod-de-a.germanywestcentral.cloudapp.azure.com
+epx-k8s-prod-jp-a.japaneast.cloudapp.azure.com
+epx-k8s-prod-us-a.westus.cloudapp.azure.com
+epx-k8s-prod-ca-a.canadacentral.cloudapp.azure.com
+eu.download.protect.eset.com
+de.download.protect.eset.com
+jp.download.protect.eset.com
+us.download.protect.eset.com
+ca.download.protect.eset.com
 redirector.eset.systems
 epns.eset.com
 eu.mdm.eset.com
@@ -234,7 +250,78 @@ mdmcomm.ca.mdm.eset.com
 mdmcomm.de.mdm.eset.com
 mdm.eset.com
 
+# --- ESET Connect ---
+eu.business-account.iam.eset.systems
+eu.application-management.eset.systems
+eu.asset-management.eset.systems
+eu.automation.eset.systems
+eu.device-management.eset.systems
+eu.iam.eset.systems
+eu.incident-management.eset.systems
+eu.installer-management.eset.systems
+eu.mobile-device-management.eset.systems
+eu.network-access-protection.eset.systems
+eu.policy-management.eset.systems
+eu.quarantine-management.eset.systems
+eu.user-management.eset.systems
+eu.web-access-protection.eset.systems
+de.business-account.iam.eset.systems
+de.application-management.eset.systems
+de.asset-management.eset.systems
+de.automation.eset.systems
+de.device-management.eset.systems
+de.iam.eset.systems
+de.incident-management.eset.systems
+de.installer-management.eset.systems
+de.mobile-device-management.eset.systems
+de.network-access-protection.eset.systems
+de.policy-management.eset.systems
+de.quarantine-management.eset.systems
+de.user-management.eset.systems
+de.web-access-protection.eset.systems
+us.business-account.iam.eset.systems
+us.application-management.eset.systems
+us.asset-management.eset.systems
+us.automation.eset.systems
+us.device-management.eset.systems
+us.iam.eset.systems
+us.incident-management.eset.systems
+us.installer-management.eset.systems
+us.mobile-device-management.eset.systems
+us.network-access-protection.eset.systems
+us.policy-management.eset.systems
+us.quarantine-management.eset.systems
+us.user-management.eset.systems
+us.web-access-protection.eset.systems
+jpn.business-account.iam.eset.systems
+jpn.application-management.eset.systems
+jpn.asset-management.eset.systems
+jpn.automation.eset.systems
+jpn.device-management.eset.systems
+jpn.iam.eset.systems
+jpn.incident-management.eset.systems
+jpn.installer-management.eset.systems
+jpn.mobile-device-management.eset.systems
+jpn.network-access-protection.eset.systems
+jpn.policy-management.eset.systems
+jpn.web-access-protection.eset.systems
+ca.business-account.iam.eset.systems
+ca.application-management.eset.systems
+ca.asset-management.eset.systems
+ca.automation.eset.systems
+ca.device-management.eset.systems
+ca.iam.eset.systems
+ca.incident-management.eset.systems
+ca.installer-management.eset.systems
+ca.mobile-device-management.eset.systems
+ca.network-access-protection.eset.systems
+ca.policy-management.eset.systems
+ca.quarantine-management.eset.systems
+ca.user-management.eset.systems
+ca.web-access-protection.eset.systems
+
 # --- ESET Inspect ---
+ema.eset.com
 inspect.eset.com
 eu01.inspect.eset.com
 us01.inspect.eset.com
