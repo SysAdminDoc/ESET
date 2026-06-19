@@ -1,0 +1,71 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1a73e8', 'primaryTextColor': '#fff', 'primaryBorderColor': '#0d47a1', 'lineColor': '#333', 'secondaryColor': '#e8f5e9', 'tertiaryColor': '#fff3e0'}}}%%
+
+flowchart TB
+    subgraph CLIENT["Endpoint Devices"]
+        EP["ESET Endpoint Security<br/>(Windows / Mac / Linux)"]
+        MOBILE["ESET Mobile Security"]
+    end
+
+    subgraph MGMT["Management Layer"]
+        PROTECT_OP["ESET PROTECT<br/>On-Prem Server"]
+        PROTECT_CL["ESET PROTECT Cloud"]
+        CONNECT["ESET Connect<br/>Platform APIs"]
+        INSPECT["ESET Inspect (XDR)"]
+    end
+
+    subgraph CLOUD["ESET Cloud Services"]
+        UPDATE["Update Servers<br/>update.eset.com<br/>um01-23.eset.com"]
+        LIVEGRID["LiveGrid Reputation<br/>*.c.eset.com<br/>livegrid.eset.systems"]
+        AUGUR["Advanced ML (Augur)<br/>augur.scanners.eset.systems"]
+        EDTD["EDTD / LiveGuard<br/>r.edtd.eset.com<br/>d.edtd.eset.com"]
+        THREAT["Threat Lab / Stats<br/>tsm09-25.eset.com"]
+        EPNS["Push Notifications<br/>*-epnsbroker*.eset.com"]
+    end
+
+    subgraph LICENSING["Licensing & Services"]
+        ACTIVATE["Activation<br/>proxy.eset.com<br/>expire.eset.com"]
+        PKI["PKI / SSL<br/>pki.eset.com"]
+    end
+
+    %% Endpoint connections
+    EP -- "443/tcp<br/>80/tcp" --> UPDATE
+    EP -- "443/tcp<br/>53/udp" --> LIVEGRID
+    EP -- "443/tcp" --> AUGUR
+    EP -- "443/tcp" --> EDTD
+    EP -- "443/tcp" --> THREAT
+    EP -- "443/tcp" --> ACTIVATE
+    EP -- "443/tcp" --> PKI
+
+    %% Management connections
+    EP -- "443/tcp" --> PROTECT_OP
+    EP -- "443/tcp<br/>8443/tcp" --> PROTECT_CL
+    EP -- "443/tcp" --> INSPECT
+    PROTECT_OP -- "80/tcp<br/>443/tcp" --> UPDATE
+    PROTECT_CL -- "443/tcp" --> CONNECT
+
+    %% Push notifications
+    EPNS -- "8883/tcp<br/>(MQTT/TLS)" --> EP
+
+    %% Mobile
+    MOBILE -- "443/tcp" --> PROTECT_CL
+    MOBILE -- "5228/tcp<br/>(FCM)" --> PROTECT_CL
+    MOBILE -- "2195-2196/tcp<br/>(APNs)" --> PROTECT_CL
+
+    %% XDR connections
+    INSPECT -- "443/tcp" --> EDTD
+    INSPECT -- "443/tcp" --> THREAT
+
+    %% Syslog
+    PROTECT_CL -- "514/601/6514<br/>(Syslog)" --> SIEM["Customer SIEM"]
+
+    classDef clientNode fill:#1565c0,stroke:#0d47a1,color:#fff
+    classDef mgmtNode fill:#2e7d32,stroke:#1b5e20,color:#fff
+    classDef cloudNode fill:#e65100,stroke:#bf360c,color:#fff
+    classDef licenseNode fill:#6a1b9a,stroke:#4a148c,color:#fff
+    classDef externalNode fill:#757575,stroke:#424242,color:#fff
+
+    class EP,MOBILE clientNode
+    class PROTECT_OP,PROTECT_CL,CONNECT,INSPECT mgmtNode
+    class UPDATE,LIVEGRID,AUGUR,EDTD,THREAT,EPNS cloudNode
+    class ACTIVATE,PKI licenseNode
+    class SIEM externalNode
