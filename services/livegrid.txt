@@ -1,0 +1,72 @@
+# ESET LiveGrid & Advanced Machine Learning
+# Cloud reputation, file submission, Augur ML engine
+# Ports: 443/tcp, 53/udp (outbound)
+
+# --- LiveGrid & Reputation (Domains) ---
+e5.sk
+h1-c01.eset.com
+h1-c02.eset.com
+h1-c03.eset.com
+h1-c04.eset.com
+h1-c05.eset.com
+h1-c06.eset.com
+h1-c07.eset.com
+h3-c01.eset.com
+h3-c02.eset.com
+h3-c03.eset.com
+h3-c04.eset.com
+h3-c05.eset.com
+h3-c06.eset.com
+h3-c07.eset.com
+h5-c01.eset.com
+h5-c02.eset.com
+h5-c03.eset.com
+h5-c04.eset.com
+h5-c05.eset.com
+avcloud.e5.sk
+dnsj.e5.sk
+livegrid.eset.systems
+a.livegrid.eset.systems
+i1.livegrid.eset.systems
+i3.livegrid.eset.systems
+i4.livegrid.eset.systems
+i5.livegrid.eset.systems
+u.eset.com
+c.eset.com
+a.c.eset.com
+i1.c.eset.com
+i3.c.eset.com
+i4.c.eset.com
+i5.c.eset.com
+
+# --- LiveGrid (IPv4) ---
+91.228.166.45
+91.228.166.46
+91.228.165.43
+91.228.165.44
+91.228.166.52
+91.228.165.12
+91.228.165.40
+91.228.167.137
+91.228.167.43
+91.228.167.46
+91.228.167.103
+91.228.167.104
+91.228.167.105
+91.228.167.106
+38.90.226.11
+38.90.226.12
+38.90.226.13
+38.90.226.46
+38.90.226.47
+
+# --- Advanced Machine Learning (Domains) ---
+h1-aidc01.eset.com
+h3-aidc01.eset.com
+h5-aidc01.eset.com
+augur.scanners.eset.systems
+
+# --- Advanced Machine Learning (IPv4) ---
+91.228.166.137
+91.228.167.184
+38.90.226.41

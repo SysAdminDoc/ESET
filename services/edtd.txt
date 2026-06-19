@@ -1,0 +1,73 @@
+# ESET Dynamic Threat Defense (EDTD), LiveGuard Advanced & ESET Inspect (XDR)
+# Cloud sandbox, threat telemetry, XDR agent communication
+# Ports: 443/tcp (outbound)
+
+# --- Threat Lab & Statistics (Domains) ---
+tsm09.eset.com
+tsm10.eset.com
+tsm11.eset.com
+tsm12.eset.com
+tsm13.eset.com
+tsm14.eset.com
+tsm15.eset.com
+tsm16.eset.com
+tsm17.eset.com
+tsm18.eset.com
+tsm19.eset.com
+tsm20.eset.com
+tsm21.eset.com
+tsm22.eset.com
+tsm23.eset.com
+tsm24.eset.com
+tsm25.eset.com
+edtd-ts.eset.com
+
+# --- Threat Lab & Statistics (IPv4) ---
+91.228.166.11
+91.228.166.148
+91.228.166.149
+91.228.167.144
+91.228.167.145
+91.228.167.146
+91.228.166.150
+91.228.167.151
+91.228.166.152
+91.228.167.155
+91.228.166.95
+91.228.166.96
+91.228.167.70
+91.228.167.71
+91.228.166.74
+91.228.167.83
+91.228.167.32
+
+# --- LiveGuard Advanced (Domains) ---
+r.edtd.eset.com
+d.edtd.eset.com
+
+# --- LiveGuard Advanced (IPv4) ---
+137.117.138.135
+13.83.244.211
+20.31.87.92
+20.43.231.148
+
+# --- ESET Inspect / XDR (Domains) ---
+ema.eset.com
+inspect.eset.com
+eu01.inspect.eset.com
+us01.inspect.eset.com
+jp01.inspect.eset.com
+ca01.inspect.eset.com
+de01.inspect.eset.com
+eu01.agent.edr.eset.systems
+us01.agent.edr.eset.systems
+jp01.agent.edr.eset.systems
+ca01.agent.edr.eset.systems
+de01.agent.edr.eset.systems
+
+# --- ESET Inspect / XDR (IPv4) ---
+52.166.186.239
+40.83.252.19
+20.188.24.252
+52.233.40.229
+20.113.169.211

@@ -1,0 +1,78 @@
+# ESET Detection Engine & Module Updates
+# Ports: 80/tcp, 443/tcp (outbound)
+# Virus signature database, module updates, pico updates, product installers
+
+# --- Detection Engine Updates (Domains) ---
+update.eset.com
+eu-update.eset.com
+us-update.eset.com
+um01.eset.com
+um02.eset.com
+um03.eset.com
+um04.eset.com
+um05.eset.com
+um06.eset.com
+um07.eset.com
+um08.eset.com
+um09.eset.com
+um10.eset.com
+um11.eset.com
+um12.eset.com
+um13.eset.com
+um14.eset.com
+um15.eset.com
+um16.eset.com
+um17.eset.com
+um21.eset.com
+um23.eset.com
+um01.cn.eset.com
+
+# --- Pico Updates ---
+pico.eset.com
+
+# --- Product Installers ---
+download.eset.com
+download.liveinstaller.eset.systems
+
+# --- Detection Engine Updates (IPv4) ---
+91.228.166.13
+91.228.166.14
+91.228.166.15
+91.228.166.16
+91.228.167.132
+91.228.167.133
+38.90.226.36
+38.90.226.37
+38.90.226.38
+38.90.226.39
+185.94.157.14
+91.228.167.170
+38.90.226.40
+185.94.157.10
+185.94.157.11
+38.90.226.44
+91.228.167.92
+91.228.167.26
+91.228.167.21
+43.154.209.149
+
+# --- Detection Engine Updates (IPv6) ---
+2a05:e800:1001:f00:b13d:71f1:e7c5:5e27
+2a05:e800:1001:f00:f76e:548c:f14f:779e
+2a05:e800:1001:f00:8390:1b8a:7f23:1323
+2a05:e800:1001:f00:fd92:22a9:7f09:a2cf
+2a05:e800:1003:f00:f837:6670:c755:2549
+2a05:e800:1003:f00:85ae:64dd:5a9a:7134
+2a05:e802:1005:f00:7141:7e00:1138:faa5
+2a05:e802:1005:f00:8116:9e87:7a0f:157e
+2a05:e802:1005:f00:cfc9:bf14:a574:15e7
+2a05:e802:1005:f00:956f:8fa9:7691:791b
+2a05:e800:1007:f00:f89f:41c9:473f:855a
+2a05:e800:1003:f00:d1b1:9b14:34bc:bffc
+2a05:e802:1005:f00:ea77:854f:2816:bf72
+2a05:e800:1007:f00:93ab:650b:a906:5b06
+2a05:e800:1007:f00:9df6:e953:8f27:659c
+2a05:e802:1005:f00:1111:106e:b385:d36e
+2a05:e800:1003:f00:eaf6:af3:268d:a2c1
+2a05:e800:1003:f00:1007:8fef:4d49:7f20
+2a05:e800:1003:f00:ff1a:68c9:d694:b6c0

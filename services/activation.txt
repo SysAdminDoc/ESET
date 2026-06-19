@@ -1,0 +1,40 @@
+# ESET Activation, Licensing & Services
+# Product activation, license checks, version checks, PKI, telemetry
+# Ports: 443/tcp, 80/tcp (outbound)
+
+# --- Expiration & Licensing ---
+expire.eset.com
+edf.eset.com
+91.228.166.154
+91.228.167.190
+38.90.226.111
+20.224.75.204
+138.91.165.201
+13.93.203.130
+23.99.12.158
+52.160.70.199
+
+# --- Mobile Security Activation ---
+reg01.eset.com
+reg02.eset.com
+reg03.eset.com
+reg04.eset.com
+
+# --- Services (Activation/Trace/IPM) ---
+proxy.eset.com
+h1-weblb01-v.eset.com
+h3-weblb01-v.eset.com
+iploc.eset.com
+pki.eset.com
+versioncheck.eset.com
+trace.eset.com
+ipm.eset.com
+banner.eset.com
+91.228.165.79
+91.228.167.123
+91.228.166.181
+91.228.167.181
+38.90.227.50
+91.228.165.81
+91.228.167.125
+91.228.167.30

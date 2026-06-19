@@ -7,3 +7,6 @@ CLAUDE.md
 # Markdown files local-only (except README)
 *.md
 !README.md
+
+# Reachability test CSV reports (generated, not tracked)
+reachability-report-*.csv
